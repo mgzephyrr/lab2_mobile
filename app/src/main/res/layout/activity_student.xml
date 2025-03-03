@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:divider="@drawable/divider"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chooseGroup"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            style="@style/TextStyle"/>
+
+        <Spinner
+            android:id="@+id/groupList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/timeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/now"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="4dp"
+                    style="@style/TextStyle"/>
+
+                <TextView
+                    android:id="@+id/timeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timeNow"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    style="@style/TextStyle"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lessonStatus"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                style="@style/TextStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/discipline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/discipline"
+                android:textSize="16sp"
+                style="@style/TextStyle"/>
+
+            <TextView
+                android:id="@+id/cabinet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cabinet"
+                android:textSize="16sp"
+                style="@style/TextStyle"/>
+
+            <TextView
+                android:id="@+id/building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/building"
+                android:textSize="16sp"
+                style="@style/TextStyle"/>
+
+            <TextView
+                android:id="@+id/teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/teacher"
+                android:textSize="16sp"
+                style="@style/TextStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/dayScheduleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/daySchedule"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:gravity="center"
+                android:layout_marginEnd="4dp"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/weekScheduleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/weekSchedule"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:gravity="center"
+                android:layout_marginStart="4dp"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="appName">Timetable for HSE FE</string>
+    <string name="studentSchedule">РАСПИСАНИЕ ДЛЯ СТУДЕНТОВ</string>
+    <string name="teacherSchedule">РАСПИСАНИЕ ДЛЯ ПРЕПОДАВАТЕЛЯ</string>
+    <string name="studentClick">Вы выбрали расписание для студентов</string>
+    <string name="teacherClick">Вы выбрали расписание для преподавателей</string>
+    <string name="chooseTeacher">Выберите преподавателя:</string>
+    <string name="chooseGroup">Выберите группу:</string>
+    <string name="now">Сейчас:</string>
+    <string name="timeNow">12:00, Пятница</string>
+    <string name="lessonStatus">Нет пар</string>
+    <string name="discipline">Дисциплина</string>
+    <string name="cabinet">Кабинет</string>
+    <string name="building">Корпус</string>
+    <string name="teacher">Преподаватель</string>
+    <string name="daySchedule">РАСПИСАНИЕ НА ДЕНЬ</string>
+    <string name="weekSchedule">РАСПИСАНИЕ НА НЕДЕЛЮ</string>
+</resources>
