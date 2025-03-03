@@ -123,7 +123,6 @@
                 android:text="@string/daySchedule"
                 android:backgroundTint="@color/colorPrimary"
                 android:textColor="@android:color/white"
-                android:maxLines="2"
                 android:gravity="center"
                 android:layout_marginEnd="4dp"
                 android:padding="8dp"/>
@@ -136,7 +135,6 @@
                 android:text="@string/weekSchedule"
                 android:backgroundTint="@color/colorPrimary"
                 android:textColor="@android:color/white"
-                android:maxLines="2"
                 android:gravity="center"
                 android:layout_marginStart="4dp"
                 android:padding="8dp"/>

@@ -13,6 +13,6 @@
     <string name="cabinet">Кабинет</string>
     <string name="building">Корпус</string>
     <string name="teacher">Преподаватель</string>
-    <string name="daySchedule">РАСПИСАНИЕ НА ДЕНЬ</string>
-    <string name="weekSchedule">РАСПИСАНИЕ НА НЕДЕЛЮ</string>
+    <string name="daySchedule">РАСПИСАНИЕ\n НА ДЕНЬ</string>
+    <string name="weekSchedule">РАСПИСАНИЕ\n НА НЕДЕЛЮ</string>
 </resources>
