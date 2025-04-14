@@ -78,7 +78,7 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
             if (tempPhotoFile != null && tempPhotoFile.exists()) {
                 File finalPhoto = getAvatarFile();
 
-                if (finalPhoto.exists()) finalPhoto.delete(); // удалить старый
+                if (finalPhoto.exists()) finalPhoto.delete(); //удалить старый
                 boolean success = tempPhotoFile.renameTo(finalPhoto);
 
                 if (success) {
