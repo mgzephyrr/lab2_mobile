@@ -25,9 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button studentButton = findViewById(R.id.studentButton);
         Button teacherButton = findViewById(R.id.teacherButton);
+        Button settingsButton = findViewById(R.id.settingsButton);
 
         studentButton.setOnClickListener(v -> showStudent());
         teacherButton.setOnClickListener(v -> showTeacher());
+        settingsButton.setOnClickListener(v -> showSettings());
     }
 
     private void showStudent() {
@@ -37,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void showTeacher() {
         Intent intent = new Intent(this, TeacherActivity.class);
+        startActivity(intent);
+    }
+
+    private void showSettings() {
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 }

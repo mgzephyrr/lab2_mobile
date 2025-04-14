@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/studentButton"
         app:layout_constraintWidth_percent="0.8"
-        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHeight_percent="0.45"
         android:layout_marginBottom="32dp"/>
 
     <!-- расписание для студентов -->
@@ -34,11 +34,11 @@
         android:text="@string/studentSchedule"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@android:color/white"
-        android:padding="16dp"
+        android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@+id/teacherButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:layout_marginHorizontal="8dp"/>
 
     <!-- расписание для преподавателя -->
@@ -49,11 +49,26 @@
         android:text="@string/teacherSchedule"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@android:color/white"
-        android:padding="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <!-- настройки -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:layout_marginHorizontal="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
