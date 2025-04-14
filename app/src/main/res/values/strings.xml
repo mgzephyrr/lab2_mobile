@@ -15,4 +15,10 @@
     <string name="teacher">Преподаватель</string>
     <string name="daySchedule">РАСПИСАНИЕ\n НА ДЕНЬ</string>
     <string name="weekSchedule">РАСПИСАНИЕ\n НА НЕДЕЛЮ</string>
+    <string name="selectAvatar">Укажите фото:</string>
+    <string name="makePhoto">СДЕЛАТЬ ФОТО</string>
+    <string name="yourName">Укажите ваше имя</string>
+    <string name="currentLux">Текущая освещенность:</string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="settings">НАСТРОЙКИ</string>
 </resources>

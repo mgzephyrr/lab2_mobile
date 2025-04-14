@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Верхняя часть с аватаром и полем для имени -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectAvatar"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/avatarPhoto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_placeholder" />
+
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/makePhoto"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/getName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/yourName"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/text_lux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/currentLux"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Кнопка "Сохранить" -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+    <!-- Список датчиков -->
+    <ListView
+        android:id="@+id/sensorListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
